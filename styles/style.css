@@ -1,29 +1,68 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Manrope";
   font-weight: 400;
-  background-color: #F5F5F5;;
+  background-color: #fff;
+  min-width: 1400px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+a,
+p,
+div {
+  letter-spacing: -0.03em;
+}
+
+.nav-container {
   width: 1400px;
   margin: 0 auto;
 }
 
-/* .container-header {
-  margin: 32.82px 124px 70px 124.65px;
-  background-color: #fff;
-} */
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1150px;
+  margin: 33px 125px 70px;
+}
 
-.container-main {
-  margin: 128px auto 150px;
-  background-color: #fff;
+.logo-link {
+  width: 127px;
+  height: 21px;
 }
 
 .all-menu {
   display: block;
-  height: 25px;
   font-size: 18px;
   line-height: 25px;
-  letter-spacing: -0.03em;
   text-decoration: none;
+  text-transform: uppercase;
   margin-bottom: 30px;
+}
+
+.nav-link {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 58px;
+  color: #121212;
+}
+
+.nav-link:hover {
+  opacity: 0.5;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.nav-link:nth-child(4) {
+  margin-right: 0;
+}
+
+.container-main {
+  margin: 0 auto;
 }
 
 .container-chair {
@@ -37,7 +76,6 @@ body {
   line-height: 60px;
   color: #121212;
   margin-bottom: 30px;
-  letter-spacing: -0.03em;
 }
 
 .img-chair {
@@ -46,6 +84,7 @@ body {
   background-image: url("../resources/chair.png");
   width: 100%;
   height: 500px;
+  background-repeat: no-repeat;
 }
 
 .img-text {
@@ -56,11 +95,14 @@ body {
   color: #ffffff;
   font-size: 20px;
   line-height: 27px;
-  letter-spacing: -0.03em;
 }
 
 .container-about-us {
-  box-sizing: border-box;
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.about-us-wrapper {
   width: 1051px;
   margin: 0 224px 150px 125px;
 }
@@ -72,26 +114,21 @@ body {
 
 .text-about-us {
   width: 1048px;
-  height: 366px;
   font-size: 45px;
   line-height: 61px;
-  letter-spacing: -0.03em;
   color: #121212;
   margin-bottom: 30px;
 }
 
 .link-services {
   display: block;
-  box-sizing: border-box;
   width: 255px;
-  height: 67px;
   background-color: #ad1818;
   color: #ffffff;
   border-radius: 5px;
   padding: 20px 40px;
   font-size: 20px;
   line-height: 27px;
-  letter-spacing: -0.03em;
   text-decoration: none;
 }
 
@@ -114,7 +151,6 @@ body {
 .card-project h3 {
   font-size: 30px;
   line-height: 41px;
-  letter-spacing: -0.03em;
   color: #121212;
   margin: 15px 0;
 }
@@ -122,7 +158,6 @@ body {
 .card-project a {
   font-size: 20px;
   line-height: 27px;
-  letter-spacing: -0.03em;
   color: #ad1818;
   text-decoration: none;
 }
@@ -137,7 +172,6 @@ body {
   color: #ad1818;
   font-size: 30px;
   line-height: 41px;
-  letter-spacing: -0.03em;
   text-align: center;
   text-decoration: none;
   padding: 56px 0;
@@ -150,27 +184,31 @@ body {
 }
 
 .container-services {
-  box-sizing: border-box;
-  width: 100%;
   background-color: #121212;
+  min-width: 100%;
+  padding-top: 151px;
 }
 
-.container-services-wrapper {
-  /* box-sizing: border-box; */
-  padding: 151px 125px 150px;
+.service-title {
   width: 1150px;
+  margin: 0 auto;
 }
 
 .menu-services {
-  margin-bottom: 0;
-  padding-bottom: 34px;
   color: #ffffff;
+  margin-bottom: 34px;
+}
+
+.container-services-wrapper {
+  width: 1400px;
+  padding: 0 125px 150px;
+  margin: 0 auto;
 }
 
 .card-service {
   box-sizing: border-box;
   margin-bottom: 60px;
-  width: 1150px;
+  min-width: 1150px;
   height: 326px;
 }
 
@@ -179,22 +217,21 @@ body {
   color: #ffffff;
   font-size: 30px;
   line-height: 41px;
-  letter-spacing: -0.03em;
+  word-spacing: 1px;
 }
 
 .card-service:nth-last-child(1) {
   margin-bottom: 0;
 }
 
-.apartment {
-  width: 100%;
-  margin-bottom: 150px;
-}
-
-.img-apartment {
+.container-img-apartment {
   position: relative;
   background-image: url("../resources/apartment.png");
   height: 717px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .text-apartment {
@@ -204,6 +241,82 @@ body {
   width: 443px;
   font-size: 30px;
   line-height: 41px;
-  letter-spacing: -0.03em;
   color: #fff;
+}
+
+.container-contacts {
+  width: 1400px;
+  height: 553px;
+  padding: 150px 125px;
+}
+
+.title-contacts {
+  margin-bottom: 32px;
+}
+
+.title-contacts::before {
+  margin-bottom: 12px;
+  margin-left: -5px;
+  content: "";
+  background-image: url(/resources/phone.png);
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.tel-contacts {
+  margin-top: 32px;
+  margin-bottom: 30px;
+  display: block;
+  font-size: 60px;
+  line-height: 60px;
+  color: #121212;
+  text-decoration: none;
+  word-spacing: 4px;
+}
+
+.email-contacts {
+  font-size: 60px;
+  line-height: 60px;
+  color: #121212;
+  opacity: 0.5;
+  text-decoration: none;
+  border-bottom: 2px solid #121212;
+}
+
+.container-footer {
+  padding: 60px 0 30px 0;
+  min-width: 1400px;
+  background-color: #121212;
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+  margin: 0 480px 87px 470px;
+}
+
+.footer-link {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.footer-link:hover {
+  opacity: 0.5;
+}
+
+.footer-link:nth-child(4) {
+  margin-right: 0;
+}
+
+.footer-text {
+  margin-top: 87px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+  opacity: 0.5;
 }
