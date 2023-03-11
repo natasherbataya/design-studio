@@ -220,22 +220,23 @@ div {
 }
 
 .container-apartment {
+  width: 100%;
   margin: 0 auto;
 }
 
 .img-apartment {
   position: relative;
   height: 717px;
-  min-width: 100%;
-  background-repeat: no-repeat;
+  min-width: 1400px;
   background-size: cover;
   background-position: 50% 50%;
-  background: linear-gradient(
+  background-image: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0) 0.52%,
       rgba(0, 0, 0, 0.4) 82.81%
     ),
     url("../resources/apartment.png");
+  background-repeat: no-repeat;
 }
 
 .text-apartment {
@@ -249,9 +250,10 @@ div {
 }
 
 .container-contacts {
+  padding: 150px 125px;
+  margin: 0 auto;
   width: 1400px;
   height: 553px;
-  padding: 150px 125px;
 }
 
 .title-contacts {
@@ -292,18 +294,17 @@ div {
 
 .container-footer {
   padding: 60px 0 30px 0;
-  min-width: 1400px;
   background-color: #121212;
 }
 
 .nav-footer {
-  display: flex;
-  justify-content: space-between;
-  width: 450px;
-  margin: 0 480px 87px 470px;
+  width: 460px;
+  margin: 0 auto;
 }
 
 .footer-link {
+  margin-right: 53px;
+  display: inline-block;
   margin-bottom: 0;
   color: #fff;
 }
