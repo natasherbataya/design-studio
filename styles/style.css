@@ -20,15 +20,15 @@ div {
 }
 
 .nav-container {
-  width: 1400px;
+  width: 1150px;
   margin: 0 auto;
+  padding: 33px 0 70px;
 }
 
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
   width: 1150px;
-  margin: 33px 125px 70px;
 }
 
 .logo-link {
@@ -59,10 +59,6 @@ div {
 
 .nav-link:nth-child(4) {
   margin-right: 0;
-}
-
-.container-main {
-  margin: 0 auto;
 }
 
 .container-chair {
@@ -98,13 +94,12 @@ div {
 }
 
 .container-about-us {
-  width: 1400px;
-  margin: 0 auto;
+  width: 1150px;
+  margin: 0 auto 150px;
 }
 
 .about-us-wrapper {
   width: 1051px;
-  margin: 0 224px 150px 125px;
 }
 
 .menu-about-us {
@@ -224,14 +219,23 @@ div {
   margin-bottom: 0;
 }
 
-.container-img-apartment {
+.container-apartment {
+  margin: 0 auto;
+}
+
+.img-apartment {
   position: relative;
-  background-image: url("../resources/apartment.png");
   height: 717px;
-  width: 100%;
+  min-width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0.52%,
+      rgba(0, 0, 0, 0.4) 82.81%
+    ),
+    url("../resources/apartment.png");
 }
 
 .text-apartment {
@@ -258,7 +262,7 @@ div {
   margin-bottom: 12px;
   margin-left: -5px;
   content: "";
-  background-image: url(/resources/phone.png);
+  background-image: url(../resources/phone.png);
   display: block;
   width: 24px;
   height: 24px;
