@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
     <title>Метрика</title>
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,7 +15,7 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header class="nav-container">
+    <!-- <header class="nav-container">
       <div class="nav-wrapper">
         <a class="logo-link" href="#">
           <img
@@ -30,57 +32,79 @@
           <a class="nav-link all-menu" href="#contacts">Контакты</a>
         </nav>
       </div>
-    </header>
+    </header> -->
     <main class="container-main">
-      <section class="container-chair">
-        <h1>Современные и стильные интерьеры для комфортной жизни</h1>
-        <div class="img-chair">
-          <p class="img-text">
-            Мы - команда квалифицированных дизайнеров и архитекторов,
-            занимающихся разработкой и реализацией дизайн-проектов
-          </p>
+      <section class="container">
+        <div class="chair-wrapper">
+          <h1>Современные и стильные интерьеры для комфортной жизни</h1>
+          <div class="chair__img">
+            <p class="description__img">
+              Мы - команда квалифицированных дизайнеров и архитекторов,
+              занимающихся разработкой и реализацией дизайн-проектов
+            </p>
+          </div>
         </div>
       </section>
 
-      <section class="container-about-us">
+      <section class="container">
         <div class="about-us-wrapper">
-          <h2 id="aboutus" class="all-menu menu-about-us">О НАС</h2>
-          <p class="text-about-us">
+          <h2 id="aboutus" class="all-menu about-us__title">О НАС</h2>
+          <p class="about-us__subtitle">
             Студия основана в 2011 году. Полностью отдаемся проектированию и
             реализации интерьеров. К нам обращаются за уютом, индивидуальными
             решениями и практичностью. Находим конструктивные решения для
             каждого интерьера, вплоть до каждой детали — нацелены на результат.
           </p>
-          <a href="#" class="link-services">Посмотреть услуги</a>
+          <a href="#" class="about-us__link">Посмотреть услуги</a>
         </div>
       </section>
 
-      <section class="container-projects">
-        <h2 id="projects" class="all-menu menu-projects">ПРОЕКТЫ</h2>
-        <ul>
-          <li class="card-project">
-            <img src="resources/project1.png" alt="Проект ЖК Правобережный" />
-            <h3>ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023</h3>
-            <a href="#">Подробнее →</a>
-          </li>
+      <section class="container">
+        <div class="project-wrapper">
+          <h2 id="projects" class="all-menu projects__title">ПРОЕКТЫ</h2>
+          <ul>
+            <li class="card-project">
+              <img
+                class="project__img"
+                src="resources/project1.png"
+                alt="Проект ЖК Правобережный"
+              />
+              <h3 class="project__subtitle">
+                ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023
+              </h3>
+              <a class="project__link" href="#">Подробнее →</a>
+            </li>
 
-          <li class="card-project">
-            <img src="resources/project2.png" alt="Проект ЖК Норвежский парк" />
-            <h3>ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023</h3>
-            <a href="#">Подробнее →</a>
-          </li>
+            <li class="card-project">
+              <img
+                class="project__img"
+                src="resources/project2.png"
+                alt="Проект ЖК Норвежский парк"
+              />
+              <h3 class="project__subtitle">
+                ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023
+              </h3>
+              <a class="project__link" href="#">Подробнее →</a>
+            </li>
 
-          <li class="card-project">
-            <img src="resources/project3.png" alt="Проект Сосновские озёра" />
-            <h3>ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022</h3>
-            <a href="#">Подробнее →</a>
-          </li>
-        </ul>
+            <li class="card-project">
+              <img
+                class="project__img"
+                src="resources/project3.png"
+                alt="Проект Сосновские озёра"
+              />
+              <h3 class="project__subtitle">
+                ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022
+              </h3>
+              <a class="project__link" href="#">Подробнее →</a>
+            </li>
+          </ul>
 
-        <a href="#" class="link-all-projects">Смотреть все проекты</a>
+          <a href="#" class="link-all-projects">Смотреть все проекты</a>
+        </div>
       </section>
 
-      <section class="container-services">
+      <!-- <section class="container-services">
         <div class="service-title">
           <h2 id="services" class="all-menu menu-services">УСЛУГИ</h2>
         </div>
@@ -144,9 +168,9 @@
             >hello@mail.com</a
           >
         </p>
-      </section>
+      </section> -->
     </main>
-    <footer class="container-footer">
+    <!-- <footer class="container-footer">
       <nav class="nav-footer">
         <a class="footer-link all-menu" href="#aboutus">О нас</a>
         <a class="footer-link all-menu" href="#projects">Проекты</a>
@@ -154,6 +178,6 @@
         <a class="footer-link all-menu" href="#contacts">Контакты</a>
       </nav>
       <p class="footer-text">студия дизайна интерьера Метрика — 2023</p>
-    </footer>
+    </footer> -->
   </body>
 </html>

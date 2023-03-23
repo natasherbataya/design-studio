@@ -6,8 +6,6 @@ body {
   font-family: "Manrope";
   font-weight: 400;
   background-color: #fff;
-  min-width: 1400px;
-  margin: 0 auto;
 }
 
 h1,
@@ -61,12 +59,16 @@ div {
   margin-right: 0;
 }
 
-.container-chair {
+.container {
   width: 1150px;
-  margin: 0 auto 150px;
+  margin: 0 auto;
 }
 
-.container-chair h1 {
+.chair-wrapper {
+  margin-bottom: 150px;
+}
+
+.chair-wrapper h1 {
   width: 956px;
   font-size: 60px;
   line-height: 60px;
@@ -74,15 +76,17 @@ div {
   margin-bottom: 30px;
 }
 
-.img-chair {
+.chair__img {
   position: relative;
   background-image: url("../resources/chair.png");
-  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  width: 1150px;
   height: 500px;
   background-repeat: no-repeat;
 }
 
-.img-text {
+.description__img {
   position: absolute;
   bottom: 40px;
   left: 40px;
@@ -92,21 +96,17 @@ div {
   line-height: 27px;
 }
 
-.container-about-us {
-  width: 1150px;
-  margin: 0 auto 150px;
-}
-
 .about-us-wrapper {
   width: 1051px;
+  margin-bottom: 150px;
 }
 
-.menu-about-us {
+.about-us__title {
   width: 51px;
   color: #121212;
 }
 
-.text-about-us {
+.about-us__subtitle {
   width: 1048px;
   font-size: 45px;
   line-height: 61px;
@@ -114,7 +114,7 @@ div {
   margin-bottom: 30px;
 }
 
-.link-services {
+.about-us__link {
   display: block;
   width: 255px;
   background-color: #ad1818;
@@ -126,30 +126,29 @@ div {
   text-decoration: none;
 }
 
-.container-projects {
-  width: 1150px;
-  margin: 0 auto 150px;
+.project-wrapper {
+  margin-bottom: 150px;
 }
 
-.menu-projects {
+.projects__title {
   width: 79px;
   color: #121212;
 }
 
 .card-project {
   width: 100%;
-  height: 548px;
+  /* height: 548px; */
   margin-bottom: 90px;
 }
 
-.card-project h3 {
+.project__subtitle {
   font-size: 30px;
   line-height: 41px;
   color: #121212;
   margin: 15px 0;
 }
 
-.card-project a {
+.project__link {
   font-size: 20px;
   line-height: 27px;
   color: #ad1818;
@@ -321,4 +320,157 @@ div {
   line-height: 27px;
   color: #ffffff;
   opacity: 0.5;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 100%;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  .chair-wrapper {
+    margin-bottom: 120px;
+  }
+
+  .chair-wrapper h1 {
+    width: 100%;
+    font-size: 50px;
+  }
+
+  .chair__img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .description__img {
+    bottom: 30px;
+  }
+
+  .about-us-wrapper {
+    width: 100%;
+    margin-bottom: 120px;
+  }
+
+  .about-us__subtitle {
+    width: 690px;
+    font-size: 35px;
+    line-height: 48px;
+  }
+
+  .project-wrapper {
+    margin-bottom: 103px;
+  }
+
+  .card-project {
+    margin-bottom: 80px;
+    /* height: 536px; */
+  }
+
+  .card-project:nth-last-child(1) {
+    margin-bottom: 102px;
+  }
+
+  .project__img {
+    width: 100%;
+  }
+
+  .project__subtitle {
+    font-size: 25px;
+    line-height: 34px;
+    margin: 15px 0 10px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+  .chair-wrapper {
+    margin-bottom: 80px;
+  }
+
+  .chair-wrapper h1 {
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .chair__img {
+    height: 304px;
+  }
+
+  .description__img {
+    font-size: 16px;
+    line-height: 22px;
+    bottom: 15px;
+    left: 15px;
+  }
+
+  .about-us-wrapper {
+    margin-bottom: 80px;
+  }
+
+  .about-us__title {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 20px;
+  }
+
+  .about-us__subtitle {
+    width: 100%;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .about-us__link {
+    width: 194px;
+    padding: 14.5px 27px;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .project-wrapper {
+    margin-bottom: 144px;
+  }
+
+  .projects__title {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 20px;
+  }
+
+  .card-project {
+    margin-bottom: 49px;
+    /* height: 328px; */
+  }
+
+  .card-project:nth-last-child(1) {
+    margin-bottom: 60px;
+  }
+
+  .project__img {
+    height: 250px;
+  }
+
+  .project__subtitle {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 20px 0 11px 0;
+  }
+
+  .project__link {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .link-all-projects {
+    height: 100px;
+    font-size: 22px;
+    line-height: 30px;
+    padding: 37px 0 37.14px 0;
+  }
 }
