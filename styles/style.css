@@ -1,13 +1,13 @@
-@import "header.css";
-@import "projects.css";
-@import "styles/services.css";
-@import "styles/contacts.css";
-@import "styles/footer.css";
-@import "intro.css";
-@import "styles/gallery.css";
-@import "styles/about-us.css";
-@import "styles/revievs.css";
-@import "styles/link.css";
+@import url(header.css);
+@import url(projects.css);
+@import url(services.css);
+@import url(contacts.css);
+@import url(footer.css);
+@import url(intro.css);
+@import url(gallery.css);
+@import url(about-us.css);
+@import url(revievs.css);
+@import url(link.css);
 
 html {
   scroll-behavior: smooth;
