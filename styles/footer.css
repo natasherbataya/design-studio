@@ -1,0 +1,33 @@
+.container-footer {
+  padding: 60px 0 30px 0;
+  background-color: #121212;
+}
+
+.nav-footer {
+  width: 460px;
+  margin: 0 auto;
+}
+
+.footer-link {
+  margin-right: 53px;
+  display: inline-block;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.footer-link:hover {
+  opacity: 0.5;
+}
+
+.footer-link:nth-child(4) {
+  margin-right: 0;
+}
+
+.footer-text {
+  margin-top: 87px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+  opacity: 0.5;
+}

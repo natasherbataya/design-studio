@@ -1,0 +1,37 @@
+.nav-container {
+  width: 1150px;
+  margin: 0 auto;
+  padding: 33px 0 70px;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1150px;
+}
+
+.logo-link {
+  width: 127px;
+  height: 21px;
+}
+
+.all-menu {
+  display: block;
+  text-decoration: none;
+}
+
+.nav-link {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 58px;
+  color: #121212;
+}
+
+.nav-link:hover {
+  opacity: 0.5;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.nav-link:nth-child(4) {
+  margin-right: 0;
+}

@@ -1,0 +1,129 @@
+.services-container {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.services-inner {
+  padding: 151px 0 150px;
+}
+
+.services-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 85px;
+  margin-bottom: 106px;
+}
+
+.card-service {
+  width: calc(50% - 5.5px);
+}
+
+.service__img__planning {
+  background-image: url("../resources/planning_solution.png");
+  background-size: cover;
+  background-position: 50%;
+  height: 389px;
+  background-repeat: no-repeat;
+}
+
+.service__img__design {
+  background-image: url("../resources/design_project.png");
+  background-size: cover;
+  background-position: 50%;
+  height: 389px;
+  background-repeat: no-repeat;
+}
+
+.service__img__supervision {
+  background-image: url("../resources/supervision.png");
+  background-size: cover;
+  background-position: 50%;
+  height: 389px;
+  background-repeat: no-repeat;
+}
+
+.service__img__equipment {
+  background-image: url("../resources/equipment.png");
+  background-size: cover;
+  background-position: 50%;
+  height: 389px;
+  background-repeat: no-repeat;
+}
+
+.service_label_wrapper {
+  padding-top: 31px;
+  padding-left: 30px;
+}
+
+.service__label {
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 22px;
+  line-height: 30px;
+  background-color: #ad1818;
+  border-radius: 5px;
+}
+
+.service__subtitle {
+  margin-top: 25px;
+}
+
+@media (max-width: 1199px) {
+  .services-inner {
+    padding-bottom: 120px;
+  }
+
+  .services-wrapper {
+    row-gap: 80px;
+    margin-bottom: 80px;
+  }
+
+  .card-service {
+    width: calc(50% - 5px);
+  }
+
+  .service_label_wrapper {
+    padding-left: 32px;
+  }
+
+  .service__label {
+    padding: 7px 27px 6px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .service__subtitle {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services-inner {
+    padding: 80px 0 80px;
+  }
+
+  .services-wrapper {
+    row-gap: 60px;
+    margin-bottom: 60px;
+  }
+
+  .card-service {
+    width: 100%;
+  }
+
+  .service_label_wrapper {
+    padding-top: 23px;
+    padding-left: 24px;
+  }
+
+  .service__label {
+    padding: 5px 24px 6px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .service__subtitle {
+    margin-top: 10px;
+  }
+}

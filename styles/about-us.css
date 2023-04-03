@@ -1,0 +1,21 @@
+.about-us__subtitle {
+  font-size: 45px;
+  line-height: 61px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1199px) {
+  .about-us__subtitle {
+    width: 690px;
+    font-size: 35px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-us__subtitle {
+    width: 100%;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
