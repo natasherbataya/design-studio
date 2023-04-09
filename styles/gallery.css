@@ -63,7 +63,8 @@
 .gallery__controls-wrapper {
   position: absolute;
   width: 100%;
-  bottom: 50%;
+  bottom: 162px;
+  margin-bottom: 20px;
 }
 
 .gallery__controls {
@@ -120,6 +121,11 @@
     line-height: 34px;
   }
 
+  .gallery__controls-wrapper {
+    bottom: 152px;
+    margin-bottom: 4px;
+  }
+
   .gallery__control-prev {
     padding-left: 51px;
   }
@@ -153,6 +159,11 @@
     width: 287px;
     font-size: 19px;
     line-height: 26px;
+  }
+
+  .gallery__controls-wrapper {
+    bottom: 50%;
+    margin-bottom: 0;
   }
 
   .gallery__controls {

@@ -87,6 +87,7 @@
   .contact__telgram-link {
     font-size: 35px;
     line-height: 46px;
+    border-bottom: none;
     opacity: 1;
   }
 }
