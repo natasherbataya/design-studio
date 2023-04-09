@@ -43,7 +43,7 @@
   word-spacing: 4px;
 }
 
-.contact__telgram {
+.contact__telgram-link {
   font-size: 60px;
   line-height: 60px;
   color: #121212;
@@ -57,7 +57,7 @@
     font-size: 45px;
   }
 
-  .contact__telgram {
+  .contact__telgram-link {
     font-size: 45px;
   }
 }
@@ -84,7 +84,7 @@
     line-height: 46px;
   }
 
-  .contact__telgram {
+  .contact__telgram-link {
     font-size: 35px;
     line-height: 46px;
     opacity: 1;
