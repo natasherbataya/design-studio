@@ -1,19 +1,23 @@
-.container-contacts {
-  padding: 150px 125px;
-  margin: 0 auto;
-  width: 1400px;
-  height: 553px;
-}
-
 .title-contacts {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
-.title-contacts::before {
-  margin-bottom: 12px;
-  margin-left: -5px;
+.contacts-wrapper {
+  display: flex;
+}
+
+.contact__tel {
+  width: 50%;
+}
+
+.tg {
+  width: 50%;
+}
+
+.contact__tel::before,
+.contact__telgram:before {
+  margin-bottom: 26px;
   content: "";
-  background-image: url(../resources/phone.png);
   display: block;
   width: 24px;
   height: 24px;
@@ -21,22 +25,68 @@
   background-repeat: no-repeat;
 }
 
-.tel-contacts {
-  margin-top: 32px;
-  margin-bottom: 30px;
+.contact__tel::before {
+  background-image: url(../resources/phone.png);
+}
+
+.contact__telgram:before {
+  background-image: url(../resources/email.png);
+}
+
+.contact__tel {
   display: block;
   font-size: 60px;
   line-height: 60px;
   color: #121212;
   text-decoration: none;
+  white-space: nowrap;
   word-spacing: 4px;
 }
 
-.email-contacts {
+.contact__telgram {
   font-size: 60px;
   line-height: 60px;
   color: #121212;
   opacity: 0.5;
   text-decoration: none;
   border-bottom: 2px solid #121212;
+}
+
+@media (max-width: 1199px) {
+  .contact__tel {
+    font-size: 45px;
+  }
+
+  .contact__telgram {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .title-contacts {
+    margin-bottom: 20px;
+  }
+
+  .contacts-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact__telgram:before,
+  .contact__tel::before {
+    margin-bottom: 20px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .contact__tel {
+    font-size: 35px;
+    line-height: 46px;
+  }
+
+  .contact__telgram {
+    font-size: 35px;
+    line-height: 46px;
+    opacity: 1;
+  }
 }

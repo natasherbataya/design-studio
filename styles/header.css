@@ -15,8 +15,11 @@
   height: 21px;
 }
 
-.all-menu {
+.identical-text {
   display: block;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
   text-decoration: none;
 }
 

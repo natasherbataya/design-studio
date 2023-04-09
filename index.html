@@ -245,34 +245,133 @@
         </ul>
       </section>
 
-      <!-- <section class="container-apartment">
-        <div class="img-apartment">
-          <p class="text-apartment">
-            Проект Двухкомнатной квартиры в ЖК Лесной Пейзаж
-          </p>
-        </div>
-      </section>  -->
+      <section>
+        <div class="gallery">
+          <div class="gallery__title-wrapper">
+            <div class="container">
+              <p class="gallery__title">галерея проектов</p>
+            </div>
+          </div>
 
-      <!-- <section class="container-contacts">
+          <div class="gallery__slides">
+            <div class="gallery__slide gallery__slide_active">
+              <img
+                class="gallery__slide-img"
+                src="resources/bed.png"
+                alt="Проект Двухкомнатной квартиры в ЖК Лесной Пейзаж"
+              />
+
+              <div class="gallery__subtitle-wrapper">
+                <div class="container">
+                  <p class="gallery__subtitle">
+                    Проект Двухкомнатной квартиры в ЖК Лесной Пейзаж
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__slide">
+              <img
+                class="gallery__slide-img"
+                src="resources/yell_chair.png"
+                alt="Проект гостиной в ЖК Маяк"
+              />
+
+              <div class="gallery__subtitle-wrapper">
+                <div class="container">
+                  <p class="gallery__subtitle">Проект гостиной в ЖК Маяк</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__slide">
+              <img
+                class="gallery__slide-img"
+                src="resources/two_mirror.png"
+                alt="Визуализация кухни-гостиной в частном доме"
+              />
+
+              <div class="gallery__subtitle-wrapper">
+                <div class="container">
+                  <p class="gallery__subtitle">
+                    Визуализация кухни-гостиной в частном доме
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__slide">
+              <img
+                class="gallery__slide-img"
+                src="resources/kitchen.png"
+                alt="Проект кухни в скандинавском стиле для ЖК Северный Ветер"
+              />
+
+              <div class="gallery__subtitle-wrapper">
+                <div class="container">
+                  <p class="gallery__subtitle">
+                    Проект кухни в скандинавском стиле для ЖК Северный Ветер
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery__controls-wrapper">
+            <div class="container">
+              <div class="gallery__controls">
+                <button class="gallery__control-prev">
+                  <picture>
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="resources/btn-right-mob.png"
+                    />
+                    <img src="resources/btn-right.png" alt="правая кнопка" />
+                  </picture>
+                </button>
+                <button class="gallery__control-next">
+                  <picture>
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="resources/btn-left-mob.png"
+                    />
+                    <img src="resources/btn-left.png" alt="левая кнопка" />
+                  </picture>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
         <h2 id="contacts" class="h2 title-contacts">Контакты</h2>
-        <p>
-          <a class="tel-contacts" href="tel:+79358954535">+7 935 895-45-35</a>
-        </p>
-        <p>
-          <a class="email-contacts" href="mailto:hello@mail.com"
-            >hello@mail.com</a
-          >
-        </p>
-      </section> -->
+
+        <div class="contacts-wrapper">
+          <a class="contact__tel" href="tel:+79358954535">+7 935 895-45-35</a>
+
+          <div class="tg">
+            <a
+              class="contact__telgram"
+              target="_blank"
+              href="http://t.me/NataSherbataya"
+              >@NataSherbataya</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
-    <!-- <footer class="container-footer">
-      <nav class="nav-footer">
-        <a class="footer-link all-menu" href="#aboutus">О нас</a>
-        <a class="footer-link all-menu" href="#projects">Проекты</a>
-        <a class="footer-link all-menu" href="#services">Услуги</a>
-        <a class="footer-link all-menu" href="#contacts">Контакты</a>
-      </nav>
-      <p class="footer-text">студия дизайна интерьера Метрика — 2023</p>
-    </footer> -->
+    <footer class="footer-container">
+      <div class="foter-inner">
+        <nav class="footer-nav">
+          <a class="footer__nav-link identical-text" href="#aboutus">О нас</a>
+          <a class="footer__nav-link identical-text" href="#projects"
+            >Проекты</a
+          >
+          <a class="footer__nav-link identical-text" href="#services">Услуги</a>
+          <a class="footer__nav-link identical-text" href="#contacts"
+            >Контакты</a
+          >
+        </nav>
+      </div>
+      <p class="footer-description">студия дизайна интерьера Метрика — 2023</p>
+    </footer>
+    <script src="gallery.js"></script>
   </body>
 </html>
