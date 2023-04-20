@@ -5,11 +5,10 @@
 
 .foter-inner {
   margin-bottom: 87px;
-  display: flex;
-  justify-content: center;
 }
 
 .footer-nav {
+  margin: auto;
   width: 450px;
   display: flex;
   justify-content: space-between;

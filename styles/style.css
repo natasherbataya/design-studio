@@ -8,6 +8,10 @@
 @import url(about-us.css);
 @import url(revievs.css);
 @import url(link.css);
+@import url(popup.css);
+@import url(input.css);
+@import url(order.css);
+@import url(burger.css);
 
 html {
   scroll-behavior: smooth;
@@ -19,14 +23,18 @@ body {
   background-color: #fff;
 }
 
-.section {
-  width: 1150px;
-  margin: 0 auto 150px;
+.body_fixed {
+  overflow: hidden;
 }
 
-/* .mb-150 {
+.container {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.mb-150 {
   margin-bottom: 150px;
-} */
+}
 
 h1,
 h2,
@@ -62,11 +70,21 @@ h3 {
   color: #ffffff;
 }
 
+button {
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+}
+
 @media (max-width: 1199px) {
-  .section {
+  .container {
     width: 100%;
     padding-left: 17px;
     padding-right: 15px;
+  }
+
+  .mb-150 {
     margin-bottom: 120px;
   }
 
@@ -77,9 +95,12 @@ h3 {
 }
 
 @media (max-width: 767px) {
-  .section {
+  .container {
     padding-left: 13px;
     padding-right: 12px;
+  }
+
+  .mb-150 {
     margin-bottom: 80px;
   }
 

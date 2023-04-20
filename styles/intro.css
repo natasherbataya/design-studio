@@ -19,7 +19,7 @@
   position: absolute;
   bottom: 40px;
   left: 40px;
-  width: 430px;
+  max-width: 430px;
   font-size: 20px;
   line-height: 27px;
 }
@@ -56,7 +56,7 @@
   .intro__description {
     bottom: 15px;
     left: 15px;
-    width: 312px;
+    max-width: 312px;
     font-size: 16px;
     line-height: 22px;
   }

@@ -1,0 +1,26 @@
+.popup__input {
+  display: block;
+  font-size: 25px;
+  line-height: 34px;
+  color: #000000;
+  border: none;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #000000;
+}
+
+.popup__input:focus {
+  outline: none;
+}
+
+.popup__input::placeholder {
+  opacity: 0.5;
+  font-family: "Manrope";
+  font-weight: 400;
+}
+
+@media (max-width: 767px) {
+  .popup__input {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
