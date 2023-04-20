@@ -16,26 +16,115 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <!-- <header class="nav-container">
+    <header class="container header">
       <div class="nav-wrapper">
         <a class="logo-link" href="#">
-          <img
-            class="logo"
-            src="resources/logo_metrika.png"
-            alt="Логтип Метрика"
-          />
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="resources/logo-metrika-mob.png"
+            />
+            <img
+              class="logo"
+              src="resources/logo_metrika.png"
+              alt="Логтип Метрика"
+            />
+          </picture>
         </a>
-
-        <nav class="nav">
-          <a class="nav-link all-menu" href="#aboutus">О нас</a>
-          <a class="nav-link all-menu" href="#projects">Проекты</a>
-          <a class="nav-link all-menu" href="#services">Услуги</a>
-          <a class="nav-link all-menu" href="#contacts">Контакты</a>
+        <nav>
+          <ul class="header__nav">
+            <li><a class="identical-text" href="#aboutus">О нас</a></li>
+            <li><a class="identical-text" href="#projects">Проекты</a></li>
+            <li><a class="identical-text" href="#services">Услуги</a></li>
+            <li><a class="identical-text" href="#contacts">Контакты</a></li>
+          </ul>
         </nav>
+        <button class="js-burger-btn burger-btn"></button>
       </div>
-    </header> -->
+      <div class="js-burger burger">
+        <div class="burger__content">
+          <img
+            class="burger_logo-link"
+            src="resources/logo-metrika-burger.png"
+            alt="Логотип Метрика"
+          />
+          <nav>
+            <ul class="burger__nav">
+              <li>
+                <a class="identical-text burger__nav-text" href="#aboutus"
+                  >О нас</a
+                >
+              </li>
+              <li>
+                <a class="identical-text burger__nav-text" href="#projects"
+                  >Проекты</a
+                >
+              </li>
+              <li>
+                <a class="identical-text burger__nav-text" href="#services"
+                  >Услуги</a
+                >
+              </li>
+              <li>
+                <a class="identical-text burger__nav-text" href="#contacts"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="burger__contacts js-burger__content">
+            <p class="burger__contact-text">для связи:</p>
+            <a class="burger__contact-tel" href="tel:+79358954535"
+              >+7 935 895-45-35</a
+            >
+            <a
+              class="burger__contact-telgram"
+              target="_blank"
+              href="http://t.me/NataSherbataya"
+              >@NataSherbataya</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
     <main>
-      <section class="section">
+      <div class="js-popup popup">
+        <div class="js-popup__content popup__content">
+          <button class="js-popup__close-btn popup__close-btn"></button>
+          <p class="order__title">Заказать услугу</p>
+          <p class="order__subtitle">
+            Заполните форму, мы свяжемся с вами в течение суток
+          </p>
+
+          <form class="popup__input-wrapper">
+            <input
+              class="popup__input order__input"
+              type="text"
+              name="name"
+              placeholder="Имя"
+            />
+
+            <input
+              class="popup__input order__input"
+              type="email"
+              name="email"
+              placeholder="Электронная почта"
+            />
+
+            <input
+              class="popup__input order__input"
+              type="tel"
+              name="phone"
+              placeholder="Номер телефона"
+            />
+          </form>
+          <button class="popup__btn identical-link link-all-projects">
+            Отправить
+          </button>
+        </div>
+      </div>
+      <section class="container mb-150">
         <h1 class="intro-title">
           Современные и стильные <br />
           интерьеры для комфортной жизни
@@ -48,7 +137,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="container mb-150">
         <h2 id="aboutus">О НАС</h2>
         <p class="about-us__subtitle">
           Студия основана в 2011 году. Полностью отдаемся проектированию и
@@ -61,7 +150,7 @@
         >
       </section>
 
-      <section class="section">
+      <section class="container mb-150">
         <h2 id="projects">ПРОЕКТЫ</h2>
         <ul>
           <li class="card-project">
@@ -133,7 +222,7 @@
       </section>
 
       <section class="services-container">
-        <div class="section">
+        <div class="container mb-150">
           <div class="services-inner">
             <h2 id="services" class="h2 service-title">УСЛУГИ</h2>
 
@@ -175,14 +264,14 @@
               </li>
             </ul>
 
-            <button class="identical-link service__link">
+            <button class="js-btn identical-link service__link">
               Заказать услугу
             </button>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="container mb-150">
         <h2 class="h2">ОТЗЫВЫ</h2>
         <ul class="reviews-description">
           <li class="review">
@@ -340,7 +429,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="container mb-150">
         <h2 id="contacts" class="h2 title-contacts">Контакты</h2>
 
         <div class="contacts-wrapper">
@@ -359,19 +448,35 @@
     </main>
     <footer class="footer-container">
       <div class="foter-inner">
-        <nav class="footer-nav">
-          <a class="footer__nav-link identical-text" href="#aboutus">О нас</a>
-          <a class="footer__nav-link identical-text" href="#projects"
-            >Проекты</a
-          >
-          <a class="footer__nav-link identical-text" href="#services">Услуги</a>
-          <a class="footer__nav-link identical-text" href="#contacts"
-            >Контакты</a
-          >
+        <nav>
+          <ul class="footer-nav">
+            <li>
+              <a class="footer__nav-link identical-text" href="#aboutus"
+                >О нас</a
+              >
+            </li>
+            <li>
+              <a class="footer__nav-link identical-text" href="#projects"
+                >Проекты</a
+              >
+            </li>
+            <li>
+              <a class="footer__nav-link identical-text" href="#services"
+                >Услуги</a
+              >
+            </li>
+            <li>
+              <a class="footer__nav-link identical-text" href="#contacts"
+                >Контакты</a
+              >
+            </li>
+          </ul>
         </nav>
       </div>
       <p class="footer-description">студия дизайна интерьера Метрика — 2023</p>
     </footer>
     <script src="gallery.js"></script>
+    <script src="popup.js"></script>
+    <script src="burger.js"></script>
   </body>
 </html>
