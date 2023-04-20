@@ -15,14 +15,16 @@
 }
 
 .popup__input-wrapper {
-  display: flex;
-  flex-direction: column;
-  row-gap: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 
 .order__input {
   width: 100%;
+  margin-bottom: 50px;
+}
+
+.mb-0 {
+  margin-bottom: 0;
 }
 
 @media (max-width: 767px) {
@@ -40,7 +42,10 @@
   }
 
   .popup__input-wrapper {
-    row-gap: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+  }
+
+  .order__input {
+    margin-bottom: 40px;
   }
 }
